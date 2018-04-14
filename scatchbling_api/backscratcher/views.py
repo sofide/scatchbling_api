@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from backscratcher.models import Backscratcher
+from backscratcher.serializers import BackscratcherSerializer
+from rest_framework import generics
 
-# Create your views here.
+
+class BackscratcherList(generics.ListCreateAPIView):
+    queryset = Backscratcher.objects.all()
+    serializer_class = BackscratcherSerializer
