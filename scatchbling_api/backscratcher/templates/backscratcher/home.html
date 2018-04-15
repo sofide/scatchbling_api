@@ -32,6 +32,7 @@
                 <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Cost</th>
+                <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +40,9 @@
                 <tr>
                     <td>{{ item.name }}</td>
                     <td>{{ item.cost }}</td>
+                    <td><a href="{% url 'bs_detail' bs_pk=item.id %}">
+                        Check it out!
+                        </a></td>
                 </tr>
             {% endfor %}
             </tbody>
