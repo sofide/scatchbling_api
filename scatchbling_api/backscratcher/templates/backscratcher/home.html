@@ -19,32 +19,30 @@
         </div>
     </div>
 
-    <div class='container section'>
-        <div class="col-12">
-            <div class="row" style="margin-top: 3rem;">
-                <h3>Backscratchers</h3>
-            </div>
-            <div class="row">
-                <p>Here is our BACKSCRATCHERS list! Enjoy it!</p>
-            </div>
-            <div class="row">
-                <table class="table table-striped">
-                <thead class="thead-dark">
-                    <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {% for item in backscratchers %}
-                    <tr>
-                        <td>{{ item.name }}</td>
-                        <td>{{ item.cost }}</td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-                </table>
-            </div>
+    <div class="col-12">
+        <div class="row" style="margin-top: 3rem;">
+            <h3>Backscratchers</h3>
+        </div>
+        <div class="row">
+            <p>Here is our BACKSCRATCHERS list! Enjoy it!</p>
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for item in backscratchers %}
+                <tr>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.cost }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
         </div>
     </div>
 
