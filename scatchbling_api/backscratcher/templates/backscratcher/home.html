@@ -1,0 +1,11 @@
+{% extends 'backscratcher/layout.html' %}
+
+{% block content %}
+
+    {% for item in backscratchers %}
+        <p>
+            {{ item.name }}|{{ item.description }}|{{ item.cost }}
+        </p>
+    {% endfor %}
+
+{% endblock %}
