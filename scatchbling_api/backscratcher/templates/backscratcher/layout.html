@@ -26,13 +26,17 @@
     <div>
       <div>
           <div class='container section'>
-            <div class="row">
-              {% if warn_base %}
-                <p class="errorlist"> {{ warn_base }} </p>
-              {% endif %}
+            <div class="col-12">
+                <div class="row">
+                {% if warn_base %}
+                    <p class="errorlist"> {{ warn_base }} </p>
+                {% endif %}
+                </div>
 
-              {% block content %}
-              {% endblock %}
+                <div class="row">
+                {% block content %}
+                {% endblock %}
+                </div>
             </div>
           </div>
       </div>
